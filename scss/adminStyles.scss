@@ -1,0 +1,47 @@
+$maxWidth: 1440px;
+// colors ========================================================//
+$colorOrange: #ff6b00;
+$colorRed: #f32828;
+$colorGreen: #8ab281;
+$colorGray: #8b8b8b;
+$colorLightGray: #e2e6ea;
+
+// default font parameter ========================================//
+$fontFamily: "IBM Plex Sans";
+$fontSize: 14px;
+
+.admin__container{
+    display: flex;
+}
+
+.control__section{
+    display: flex;
+    flex-direction: column;
+    background-color: $colorGray;
+    width: 800px;
+}
+
+.log__out{
+    font-size: 20px;
+    color: $colorLightGray;
+    text-decoration: none;
+    padding: 40px 0 0 10px;
+}
+.log__out:hover{
+    color: $colorRed;
+}
+
+.item__inputs{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.textarea{
+    height: 60px;
+    outline: none;
+}
+
+.input{
+    border-radius: none ;
+}

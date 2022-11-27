@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/adminStyles.css">
+    <title>Admin Control</title>
+</head>
+<body>
+    <div class="container">
+        <div class="admin__container">
+            <div class="control__section section__item">
+              <div class="section">
+                <div class="item__inputs">
+                  <p>Name:</p>
+                  <textarea class="textarea" name="name" id="name" cols="20" rows="2"></textarea>
+                  <p>Steel grade:</p>
+                  <textarea class="textarea" name="description" id="description" cols="20" rows="2"></textarea>
+                  <p>Hardness:</p>
+                  <textarea class="textarea" name="description" id="description" cols="20" rows="2"></textarea>
+                  <p>Lever:</p>
+                  <textarea class="textarea" name="description" id="description" cols="20" rows="2"></textarea>
+                  <p>Price:</p>
+                  <input class="input" name="description" id="description" cols="20" rows="2"></input>
+                  <p>Image name:</p>
+                  <input type="text" class="input">
+                </div>  
+                <div class="buttons__section">
+                  <button class="sign-in__button">add product</button>
+                  <a href="/index.html" class="log__out">log out</a>
+                </div>
+              </div>
+            </div>
+            <div id="prod" class="product__container"></div>
+        </div>
+      <script src="/js/main.js"></script>
+</body>
+</html>

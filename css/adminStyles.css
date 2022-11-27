@@ -1,0 +1,36 @@
+.admin__container {
+  display: flex;
+}
+
+.control__section {
+  display: flex;
+  flex-direction: column;
+  background-color: #8b8b8b;
+  width: 800px;
+}
+
+.log__out {
+  font-size: 20px;
+  color: #e2e6ea;
+  text-decoration: none;
+  padding: 40px 0 0 10px;
+}
+
+.log__out:hover {
+  color: #f32828;
+}
+
+.item__inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.textarea {
+  height: 60px;
+  outline: none;
+}
+
+.input {
+  border-radius: none;
+}/*# sourceMappingURL=adminStyles.css.map */

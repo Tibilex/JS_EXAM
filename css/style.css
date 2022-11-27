@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", san-sarif;
+}
+
+.container {
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 1440px;
+  font-size: 14px;
+  position: relative;
+}
+
+.header__background {
+  position: absolute;
+  z-index: -1;
+  max-height: 240px;
+}
+
+.header__container {
+  max-height: 250px;
+}
+
+.header__block {
+  display: flex;
+}
+
+.main__container {
+  display: flex;
+}
+
+.sorting__container {
+  min-width: 360px;
+}
+
+.product__container {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.product__block {
+  width: 330px;
+  height: 490px;
+  border: 1px solid #000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 26px;
+  flex: 0 1 auto;
+  margin: 15px;
+}
+
+.product__block ul {
+  margin: 20px 20px 10px 20px;
+}
+
+.product__block li {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.product__image {
+  position: relative;
+  width: 100%;
+}
+
+.product__image-link {
+  display: flex;
+  justify-content: center;
+}
+
+.product__img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.product__name {
+  text-transform: uppercase;
+  font-family: "oswald", sans-serif;
+  font-size: 16px;
+}
+
+.product__avaliable {
+  color: #8ab281;
+}
+
+.product__price {
+  font-family: "oswald", sans-serif;
+  font-size: 20px;
+}
+
+.product__buy {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 48px;
+  width: 88%;
+  color: #fff;
+  background: #ff6b00;
+  border: 1px solid #ff6b00;
+  font-size: 20px;
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  line-height: 24px;
+  transition: 0.4s;
+  margin: 20px;
+}
+
+.product__buy:hover {
+  background: #f32828;
+}
+
+.block {
+  position: relative;
+}
+
+.header__links {
+  font-family: "oswald", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  padding: 8px 22px 8px 0;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.header__links:hover {
+  color: #ff6b00;
+}
+
+.header__lenguage {
+  font-family: "oswald", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: lowercase;
+  margin-left: 1050px;
+  cursor: pointer;
+}
+
+.header__lenguage span {
+  color: #ff6b00;
+}
+
+.block__item1 {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #8b8b8b;
+}
+
+.block__item2 {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #8b8b8b;
+}
+
+.label {
+  font-weight: 500;
+  color: #fff;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0 0 0 30px;
+}
+
+.phone {
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.phone:hover {
+  text-decoration: underline;
+}
+
+.header__logo {
+  height: 87px;
+  width: 87px;
+}
+
+.labels__block {
+  display: flex;
+  align-items: center;
+  width: 367px;
+}
+
+.header__work-time {
+  color: #fff;
+  margin: 0 0 0 30px;
+  line-height: 22px;
+}
+
+.header__contacts {
+  font-display: flex;
+  align-items: center;
+}
+
+.header__login {
+  display: flex;
+  align-items: flex-end;
+}
+
+.login__button {
+  margin: 0 0 0 400px;
+  height: 55px;
+  width: 222px;
+  font-weight: 500;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #fff;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.login__button:hover {
+  color: #000;
+  background-color: #e2e6ea;
+}
+
+.nav__block {
+  display: flex;
+  align-items: center;
+  width: 478px;
+  height: 65px;
+  border-right: 1px solid #8b8b8b;
+}
+
+.header__nav-l {
+  font-family: "oswald", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.2s;
+  margin: 0 60px 0 0;
+  cursor: pointer;
+}
+
+.header__nav-l:hover {
+  color: #ff6b00;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  width: 401px;
+  height: 65px;
+  padding: 15px 35px;
+}
+
+.search__text {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 100%;
+}
+
+.search__text::-moz-placeholder {
+  font-size: 14px;
+  color: #fff;
+}
+
+.search__text:-ms-input-placeholder {
+  font-size: 14px;
+  color: #fff;
+}
+
+.search__text::placeholder {
+  font-size: 14px;
+  color: #fff;
+}
+
+.search__img-block {
+  margin: 0 10px;
+}
+
+.header__cart {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  padding: 0 0 0 34px;
+  cursor: pointer;
+  padding-left: 320px;
+}
+
+.cart {
+  border-left: 1px solid #8b8b8b;
+}
+
+.cart__img {
+  margin: 0 10px;
+}
+
+.cart__counter {
+  font-family: "oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+}
+
+.cart__description-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart__descriptoin {
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  line-height: 16px;
+}
+
+.login__form {
+  position: absolute;
+  top: 20vh;
+  left: 30%;
+  height: 300px;
+  width: 500px;
+  z-index: 50;
+  background-color: #8b8b8b;
+}
+
+.title__block {
+  display: flex;
+}
+
+.input__block {
+  position: relative;
+  padding: 10px 10px;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 0 10px;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.input__block p {
+  display: block;
+  color: #b3b3b3;
+  font-size: 14px;
+  margin: 0 0 4px 0;
+  letter-spacing: 2px;
+}
+
+.login__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login__text {
+  color: #b3b3b3;
+  letter-spacing: 1px;
+  padding: 0 0 10px 0;
+}
+
+.sign-in__button {
+  position: relative;
+  height: 48px;
+  width: 100%;
+  color: #fff;
+  background: #ff6b00;
+  border: 1px solid #ff6b00;
+  font-size: 20px;
+  font-family: "oswald", sans-serif;
+  text-transform: uppercase;
+  line-height: 24px;
+  transition: 0.4s;
+}
+
+.sign-in__button:hover {
+  background: #f32828;
+}
+
+h3 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "oswald", sans-serif;
+}
+
+.title__block {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 0 0;
+  margin-left: 10px;
+}
+
+.close__form {
+  margin-left: 400px;
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  background: #ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+.close__form:hover {
+  background: #f32828;
+}
+
+.article__header {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "oswald", sans-serif;
+}
+
+.article p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}/*# sourceMappingURL=style.css.map */
